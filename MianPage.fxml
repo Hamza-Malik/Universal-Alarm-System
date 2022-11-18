@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="995.0" prefWidth="1963.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainPageController">
+   <children>
+      <AnchorPane layoutX="1.0" layoutY="-2.0" prefHeight="247.0" prefWidth="1963.0" style="-fx-background-color: #00cccc;" />
+      <AnchorPane id="sign_in" layoutX="477.0" layoutY="122.0" prefHeight="751.0" prefWidth="1009.0" style="-fx-background-color: #f0f5f5;" styleClass="sign_in" stylesheets="@application.css">
+         <children>
+            <JFXButton layoutX="284.0" layoutY="260.0" onAction="#CustomerMenuListener" prefHeight="120.0" prefWidth="442.0" style="-fx-background-color: #00cccc;" text="Customer">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font></JFXButton>
+            <JFXButton layoutX="284.0" layoutY="535.0" onAction="#StaffMenuListener" prefHeight="120.0" prefWidth="442.0" style="-fx-background-color: #00cccc;" text="Staff">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font></JFXButton>
+            <Text layoutX="364.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Select the User type">
+               <font>
+                  <Font name="System Bold Italic" size="29.0" />
+               </font>
+            </Text>
+            <ImageView disable="true" fitHeight="46.0" fitWidth="56.0" layoutX="386.0" layoutY="572.0" opacity="0.88" pickOnBounds="true">
+               <image>
+                  <Image url="@images/manager.png" />
+               </image>
+            </ImageView>
+            <ImageView disable="true" fitHeight="58.0" fitWidth="64.0" layoutX="364.0" layoutY="291.0" opacity="0.88" pickOnBounds="true">
+               <image>
+                  <Image url="@images/customernew.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+   <effect>
+      <InnerShadow />
+   </effect>
+</AnchorPane>
